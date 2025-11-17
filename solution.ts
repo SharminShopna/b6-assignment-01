@@ -35,9 +35,6 @@ class Person {
     }
 };
 
-// const person1 = new Person('John Doe', 30);
-// const person2 = new Person('Alice', 25);
-
 
 type Item = {
     title: string;
@@ -46,12 +43,6 @@ type Item = {
 const filterByRating = (value: Item[]): Item[] => {
     return value.filter(item => item.rating >= 4)
 }
-
-// const books = [
-//   { title: 'Book A', rating: 4.5 },
-//   { title: 'Book B', rating: 3.2 },
-//   { title: 'Book C', rating: 5.0 },
-// ];
 
 
 
@@ -65,13 +56,6 @@ const filterActiveUsers = (user: User[]): User[] => {
     return user.filter(value => value.isActive === true)
 }
 
-// const users = [
-//   { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
-//   { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
-//   { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
-// ];
-
-
 
 interface Book {
     title: string;
@@ -83,13 +67,6 @@ const printBookDetails = (value: Book) => {
     console.log(`Title: ${value.title}, Author: ${value.author}, Published: ${value.publishedYear}, Available: ${value.isAvailable ? 'Yes' : 'No'}`)
 };
 
-// const myBook: Book = {
-//   title: 'The Great Gatsby',
-//   author: 'F. Scott Fitzgerald',
-//   publishedYear: 1925,
-//   isAvailable: true,
-// };
-// printBookDetails(myBook);
 
 
 const getUniqueValues = (array1: (string | number)[], array2: (string | number)[]): (string | number)[] => {
@@ -107,8 +84,6 @@ const getUniqueValues = (array1: (string | number)[], array2: (string | number)[
     return result;
 };
 
-// const array1 = [1, 2, 3, 4, 5];
-// const array2 = [3, 4, 5, 6, 7];
 
 
 type Product = {
@@ -128,8 +103,4 @@ const calculateTotalPrice = (value: Product[]): number =>{
         return total + (price * quantity);
     }, 0)
 };
-// const products = [
-//   { name: 'Pen', price: 10, quantity: 2 },
-//   { name: 'Notebook', price: 25, quantity: 3, discount: 10 },
-//   { name: 'Bag', price: 50, quantity: 1, discount: 20 },
-// ];
+
